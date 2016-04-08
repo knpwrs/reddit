@@ -150,7 +150,9 @@
       %endif
       %if hasattr(thing, "num_gildings_message"):
         <div>
-          ${thing.num_gildings_message}
+          <a href="/user/${thing.user.name}/gilded/given/">
+            ${thing.num_gildings_message}
+          </a>
         </div>
       %endif
     </div>
